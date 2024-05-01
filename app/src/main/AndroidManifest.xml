@@ -23,11 +23,11 @@
         <activity
             android:name=".StartGame"
             android:configChanges="orientation|keyboardHidden"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="fullSensor" />
         <activity
             android:name=".GameOver"
             android:configChanges="orientation|keyboardHidden"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="fullSensor" />
     </application>
 
 </manifest>

@@ -4,27 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.prabashwara.planeshooterkotlin.MainActivity"
-    android:background="@drawable/background">
+    android:background="@drawable/banner"
+    tools:context="com.prabashwara.planeshooterkotlin.MainActivity">
 
     <ImageButton
         android:id="@+id/imageButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
+        android:layout_centerInParent="true"
         android:background="@drawable/play"
         android:onClick="startGame"
-        android:padding="10dp"/>
+        android:padding="10dp" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/imageButton"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="12dp"
-        android:text="Start Game"
-        android:textColor="@android:color/holo_red_dark"
-        android:textSize="30sp" />
 </RelativeLayout>

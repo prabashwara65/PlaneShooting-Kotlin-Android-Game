@@ -11,7 +11,7 @@ class Missile(context: Context, private val dWidth: Int, private val dHeight: In
     var missile: Bitmap
 
     init {
-        missile = BitmapFactory.decodeResource(context.resources, R.drawable.missile)
+        missile = BitmapFactory.decodeResource(context.resources, R.drawable.shot)
         x = dWidth / 2 - getMissileWidth() / 2
         y = dHeight - GameView.tankHeight - getMissileHeight() / 2
         mVelocity = 50

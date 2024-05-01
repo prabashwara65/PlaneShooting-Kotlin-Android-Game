@@ -21,8 +21,8 @@ import java.util.concurrent.CopyOnWriteArrayList
 
 class GameView(context: Context, attrs: AttributeSet?) : View(context, attrs) {
 
-    private var background: Bitmap = BitmapFactory.decodeResource(resources, R.drawable.background)
-    private var tank: Bitmap = BitmapFactory.decodeResource(resources, R.drawable.tank)
+    private var background: Bitmap = BitmapFactory.decodeResource(resources, R.drawable.nightsky)
+    private var tank: Bitmap = BitmapFactory.decodeResource(resources, R.drawable.rocket2)
     private val rect: Rect
     private var planes = CopyOnWriteArrayList<Plane>()
     private var planes2 = CopyOnWriteArrayList<Plane2>()
