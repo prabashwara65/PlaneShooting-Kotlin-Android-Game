@@ -14,6 +14,7 @@
         android:layout_centerInParent="true"
         android:background="@drawable/play"
         android:onClick="startGame"
-        android:padding="10dp" />
+        android:padding="10dp"
+        android:contentDescription="@string/todo" />
 
 </RelativeLayout>
