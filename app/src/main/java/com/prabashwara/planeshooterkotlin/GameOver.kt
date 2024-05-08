@@ -18,6 +18,11 @@ class GameOver : Activity() {
         setContentView(R.layout.game_over)
         val score = intent.extras!!.getInt("score")
         val pref = getSharedPreferences("MyPref", 0)
+
+        //Shared Preferences usage to
+        // insert data to internal
+        // storage and retrieve and
+        // comparison
         var scoreSP = pref.getInt("scoreSP", 0)
         val editor = pref.edit()
         if (score > scoreSP) {

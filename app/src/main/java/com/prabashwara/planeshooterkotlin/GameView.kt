@@ -82,6 +82,8 @@ class GameView(context: Context, attrs: AttributeSet?) : View(context, attrs) {
             plane.planeX -= plane.velocity
             if (plane.planeX < -plane.getWidth()) {
                 plane.resetPosition()
+                //Life is decreasing when planes not hit by missiles
+                //planes are missing life will lose
                 life--
                 if (life == 0) {
                     gameOver()
@@ -98,6 +100,7 @@ class GameView(context: Context, attrs: AttributeSet?) : View(context, attrs) {
             plane2.planeX += plane2.velocity
             if (plane2.planeX > dWidth + plane2.getWidth()) {
                 plane2.resetPosition()
+                //Life is decreasing when planes not hit by missiles
                 life--
                 if (life == 0) {
                     gameOver()
@@ -164,6 +167,7 @@ class GameView(context: Context, attrs: AttributeSet?) : View(context, attrs) {
     }
 
     private fun gameOver() {
+        //passing count with intent
         val intent = Intent(context, GameOver::class.java)
         intent.putExtra("score", count * 10)
         context.startActivity(intent)
@@ -176,7 +180,10 @@ class GameView(context: Context, attrs: AttributeSet?) : View(context, attrs) {
         explosion.explosionY = plane.planeY + plane.getHeight() / 2 - explosion.getExplosionHeight() / 2
         explosions.add(explosion)
         plane.resetPosition()
+        //increase count when missile hit on plane
         count++
+        ////increase player life when missile hit on plane
+
         if (point != 0) {
             sp.play(point, 1f, 1f, 0, 0, 1f)
         }
