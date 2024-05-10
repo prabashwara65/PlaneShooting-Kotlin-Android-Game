@@ -91,6 +91,7 @@ class GameView(context: Context, attrs: AttributeSet?) : View(context, attrs) {
             }
         }
 
+        //For plane 2
         for (plane2 in planes2) {
             plane2.getBitmap()?.let { canvas.drawBitmap(it, null, Rect(plane2.planeX, plane2.planeY, plane2.planeX + plane2.getWidth(), plane2.planeY + plane2.getHeight()), null) }
             plane2.planeFrame++
