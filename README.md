@@ -1,6 +1,6 @@
 # Plane Shooting
 
-<img src="planeshooting.png" alt="Plane Shooting" width="600" height="400">
+<img src="planeshooting.png" alt="Plane Shooting" width="600" height="100">
 
 ## Description
 
