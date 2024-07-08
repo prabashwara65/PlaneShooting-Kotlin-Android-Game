@@ -1,6 +1,6 @@
 # Plane Shooting
 
-![Plane Shooting]([https://github.com/YOUR_GITHUB_USERNAME/YOUR_REPOSITORY_NAME/blob/main/path/to/planeshooting.png](https://github.com/prabashwara65/PlaneShooting-Kotlin-Android-Game/blob/main/planeshooting.png))
+![Plane Shooting]((https://github.com/prabashwara65/PlaneShooting-Kotlin-Android-Game/blob/main/planeshooting.png))
 
 ## Description
 
