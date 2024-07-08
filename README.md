@@ -1,6 +1,6 @@
 # Plane Shooting
 
-![Plane Shooting]((https://github.com/prabashwara65/PlaneShooting-Kotlin-Android-Game/blob/main/planeshooting.png))
+![Plane Shooting](planeshooting.png)
 
 ## Description
 
